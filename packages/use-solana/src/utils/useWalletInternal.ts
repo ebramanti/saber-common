@@ -52,7 +52,7 @@ export interface UseWallet<
   /**
    * Disconnects the wallet and prevents auto-reconnect.
    */
-  disconnect: () => void;
+  disconnect: () => Promise<void>;
 }
 
 export interface UseWalletArgs<WalletType extends WalletTypeEnum<WalletType>> {
